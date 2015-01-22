@@ -1,9 +1,10 @@
-var HTML = require("meteor-htmljs");
-var Tracker = require("meteor-tracker");
-var Blaze = require("meteor-blaze");
-var ObserveSequence = require("meteor-observe-sequence");
-var ReactiveVar = require("meteor-reactive-var");
-var Template = require("meteor-templating");
+module.exports = function(Meteor);
+var HTML = Meteor.HTML;
+var Tracker = Meteor.Tracker;
+var Blaze = Meteor.Blaze;
+var ObserveSequence = Meteor.ObserveSequence;
+var ReactiveVar = Meteor.ReactiveVar;
+var Template = Meteor.Template;
 
 var Spacebars;
 var Handlebars = {};
@@ -297,4 +298,5 @@ Spacebars.With = function (argFunc, contentFunc, elseFunc) {
 
 // XXX COMPAT WITH 0.9.0
 Spacebars.TemplateWith = Blaze._TemplateWith;
-module.exports = Spacebars;
+  Meteor.Spacebars = Spacebars;
+};
