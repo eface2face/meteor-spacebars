@@ -1,6 +1,9 @@
 {
   "name": "meteor-spacebars",
-  "repository": { "type": "git", "url": "https://github.com/eface2face/meteor-spacebars" },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eface2face/meteor-spacebars"
+  },
   "version": "1.0.0",
   "description": "",
   "main": "spacebars.js",
@@ -8,5 +11,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "meteor-blaze": "^1.0.0",
+    "meteor-htmljs": "^1.0.0",
+    "meteor-observe-sequence": "^1.0.0",
+    "meteor-reactive-var": "^1.0.0",
+    "meteor-templating": "^1.0.1",
+    "meteor-tracker": "^1.0.1"
+  }
 }
